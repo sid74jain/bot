@@ -1,5 +1,5 @@
 {
-  "name": "dialogflow-manychat-webhook",
+  "name": "bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
