@@ -20,14 +20,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const port = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 app.post('/', async (req, res) => {
   const tag = req.body.fulfillmentInfo.tag;
 
   let responseMessage = 'Default response';
-  if (tag === 'website_tag') {
-    responseMessage = 'आप हमारी वेबसाइट यहाँ देख सकते हैं: https://interactai.in';
+  if (tag === 'web_tag') {
+    responseMessage = ' https://interactai.in';
   }
 
   res.json({
